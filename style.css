@@ -1,0 +1,116 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.top{
+    width: 100%;
+    height: 70px;
+    background: rgba(228, 17, 17, 0.658);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px; 
+}
+.logo-area{
+    width: 30%;
+}
+.logo-area a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-area a img{
+    width: 100px;
+}
+.logo-area a h1{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: cursive;
+    margin-left: 5px;
+}
+.menu-area{
+    width: 45%;
+}
+.menu-area ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-area ul li{
+    position: relative;
+}
+.menu-area ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: aqua;
+    bottom: -10px;
+    left: 0;
+    transition: 0.3s all ease-in-out;
+}
+.menu-area ul li:hover::after{
+    width: 100%;
+}
+.menu-area ul li a{
+    color: aliceblue;
+    font-family: cursive;
+    font-size: 16px;
+    transition: 0.3 all ease-in-out;
+}
+.menu-area ul li a:hover{
+    color: aqua;
+}
+.info{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+}
+.info h1{
+    color: aliceblue;
+    font-family: cursive;
+    font-size: 50px;
+}
+.info p{
+    color: aliceblue;
+    font-size: 18px;
+    font-family: cursive;
+    margin: 20px 0px;
+}
+.button button{
+    padding: 15px 45px;
+    background: transparent;
+    border: 3px solid aqua;
+    color: aliceblue;
+    font-size: 16px;
+    font-family: cursive;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.button button::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: rgb(228, 17, 17, 0.658);
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: .3s all ease-in-out;
+}
+.button button:hover::after{
+    width: 100%;
+
+}
